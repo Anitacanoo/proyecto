@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda de Animales - Consejos y Blog</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+
+    body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        background-color: #f4f4f4;
+    }
+
+    header {
+        background-color: #4CAF50;
+        color: white;
+        text-align: center;
+        padding: 20px;
+    }
+
+    header h1 {
+        margin-bottom: 10px;
+    }
+
+    header p {
+        font-size: 1.2em;
+    }
+
+    section {
+        margin: 20px;
+        padding: 20px;
+        background-color: white;
+        border-radius: 8px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+        color: #333;
+        margin-bottom: 20px;
+    }
+
+    .consejo {
+        margin-bottom: 20px;
+    }
+
+    .consejo h3 {
+        color: #4CAF50;
+        margin-bottom: 10px;
+    }
+
+    .consejo p {
+        color: #555;
+    }
+
+    form {
+        margin-bottom: 30px;
+    }
+
+    form label {
+        display: block;
+        margin-bottom: 5px;
+        color: #333;
+    }
+
+    form input[type="text"], 
+    form textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        background-color: #f9f9f9;
+    }
+
+    form button {
+        padding: 10px 15px;
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    form button:hover {
+        background-color: #45a049;
+    }
+
+    #comentarios {
+        margin-top: 20px;
+    }
+
+    #comentarios .comentario {
+        margin-bottom: 15px;
+        background-color: #f1f1f1;
+        padding: 10px;
+        border-left: 5px solid #4CAF50;
+        border-radius: 5px;
+    }
+
+    footer {
+        text-align: center;
+        margin-top: 20px;
+        padding: 10px;
+        background-color: #333;
+        color: white;
+    }
+
+    </style>
+</head>
+    
+<body>
+      
+    <header>
+        <h1>Bienvenidos a la Tienda de Animales</h1>
+        <p>Encuentra los mejores consejos para el cuidado de tus mascotas</p>
+    </header>
+
+    
+    <section id="consejos">
+        <h2>Consejos para Cuidar a tus Mascotas</h2>
+        <div class="consejo">
+            <h3>Consejo 1: Alimentación adecuada</h3>
+            <p>Es importante proporcionar una dieta equilibrada según la especie de tu mascota. Consulta a un veterinario para obtener recomendaciones específicas.</p>
+        </div>
+        <div class="consejo">
+            <h3>Consejo 2: Ejercicio diario</h3>
+            <p>El ejercicio es esencial para mantener a tu mascota en forma. Los perros necesitan paseos diarios, mientras que los gatos disfrutan de jugar en interiores.</p>
+        </div>
+        <div class="consejo">
+            <h3>Consejo 3: Visitas al veterinario</h3>
+            <p>Realiza chequeos regulares con el veterinario para asegurarte de que tu mascota esté saludable y al día con sus vacunas.</p>
+        </div>
+    </section>
+    <section id="novedades" class="info-section">
+        <h2>Novedades de la Tienda</h2>
+        <section>
+            <h3 style="color: #4CAF50;">Nuevo Pienso Orgánico</h3>
+            <p>Ahora disponemos de una línea de pienso orgánico para perros y gatos. ¡Ven a probarlo y mejora la nutrición de tu mascota!</p>
+        </section>
+       <section>
+            <h3 style="color: #4CAF50;">Juguetes Interactivos con Descuento</h3>
+            <p>Durante este mes, todos los juguetes interactivos para mascotas tienen un descuento del 20%. ¡No te lo pierdas!</p>
+        </section>
+        <section>
+            <h3 style="color: #4CAF50;">Nuevo Servicio de Peluquería Canina</h3>
+            <p>Hemos añadido un servicio de peluquería para perros. Asegúrate de reservar con antelación para que tu perro siempre luzca impecable.</p>
+        
+    </section>
+
+    </section>
+    <section id="blog">
+        <h2>Blog de Comentarios</h2>
+        <form id="comentarios-form">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+            
+            <label for="comentario">Comentario:</label>
+            <textarea id="comentario" name="comentario" required></textarea>
+
+            <button type="submit">Enviar Comentario</button>
+        </form>
+
+        <div id="comentarios">
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2024 Tienda de Animales - Todos los derechos reservados</p>
+         <p>
+        <a href="POLITICA%20DE%20PRIVACIDAD.html" target="_blank" style="color: white;">Política de Privacidad</a> | 
+        <a href="AVISO%20LEGAL.html" target="_blank" style="color: white;">Aviso Legal</a> | 
+        <a href="POLITICA%20DE%20COOKIES.html" target="_blank" style="color: white;">Política de Cookies</a>| 
+        <a href="CONDICIONES%20DE%20COMPRA.html" target="_blank" style="color: white;">Condiciones de Compra</a>
+    </p>
+    </footer>
+
+    <script>
+    document.getElementById("comentarios-form").addEventListener("submit", function(event) {
+        event.preventDefault();
+        let nombre = document.getElementById("nombre").value;
+        let comentario = document.getElementById("comentario").value;
+
+        if (nombre && comentario) {
+          
+            let nuevoComentario = document.createElement("div");
+            nuevoComentario.classList.add("comentario");
+            nuevoComentario.innerHTML = `${nombre}: ${comentario}`;
+
+          
+            document.getElementById("comentarios").appendChild(nuevoComentario);
+
+          
+            document.getElementById("nombre").value = "";
+            document.getElementById("comentario").value = "";
+        }
+    });
+    </script>
+    
+</body>
+</html>

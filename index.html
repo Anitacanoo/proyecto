@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Ana Cano Peralta">
+    <meta name="description" content="SUPERZOO es tu tienda para mascotas, donde encontrarás alimentos, accesorios, productos de higiene y servicios veterinarios especializados. ¡Todo para tu mascota en un solo lugar!">
+    <meta name="keywords" content="tienda mascotas, alimentos para mascotas, accesorios, higiene para mascotas, veterinarios, consultas veterinarias, vacunación mascotas">
+
+    <title>SUPERZOO - Tienda para Mascotas</title>
+    
+    <style>
+     
+           body {
+    font-family: 'Arial', sans-serif;
+    margin: 0; 
+    padding: 0; 
+    background-color: #f3f4ed; 
+    color: #333; 
+}
+
+.header {
+    background-color: #4CAF50; 
+    padding: 20px; 
+    text-align: center;
+    color: white; 
+}
+
+.header h1 {
+    font-size: 3em; 
+    margin: 0; 
+}
+
+.header p {
+    font-size: 1.2em; 
+    margin-top: 5px; 
+}
+
+.capa1 {
+    background-color: #4CAF50; 
+    padding: 10px;
+    text-align: center;
+}
+
+.capa1 a {
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+    margin: 0 10px;
+    font-size: 1em; 
+}
+
+.capa1 a:hover {
+    background-color: #45a049; /* Cambia el color de fondo al pasar el cursor por encima */
+    border-radius: 5px;
+}
+
+.contenido {
+    padding: 20px; 
+}
+
+.contenido h2 {
+    color: #4CAF50; 
+    text-align: center; 
+    font-size: 2.5em; 
+}
+
+.products, .services {
+    display: flex; 
+    justify-content: space-around; /* LOS ESPACIOS DE LAS FOTOS */
+    flex-wrap: wrap; /* Permite que los elementos pasen a una nueva línea si es necesario */
+    margin-top: 20px; 
+}
+
+.img {
+    background-color: white;
+    padding: 15px;
+    width: 220px;
+    text-align: center; 
+    border-radius: 10px; 
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Sombra por detras las imagenes*/
+    margin: 15px; 
+}
+
+.img img {
+    width: 100%; 
+    height: 140px; 
+    object-fit: cover; /* Ajusta la imagen para que se recorte y no se deforme */
+    border-radius: 10px 10px 0 0;
+}
+
+.img h3 {
+    color: #333; 
+    font-size: 1.3em;
+    margin-top: 10px;
+}
+
+.img p {
+    color: #555; 
+    font-size: 0.9em;
+}
+
+.footer {
+    background-color: #333; 
+    color: white; 
+    text-align: center; 
+    padding: 20px; 
+}
+
+.footer p {
+    margin: 0; 
+}
+
+
+.consejos {
+    background-color: #fff;
+    padding: 15px; 
+    margin: 10px 0;
+    border-radius: 8px;
+  
+}
+
+.consejos h4 {
+    margin-bottom: 5px; 
+    font-size: 1.3em; 
+    color: #4CAF50;
+}
+
+.consejos p {
+    font-size: 0.9em;
+    color: #555;
+}
+
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <h1>SUPERZOO</h1>
+        <p>¡Todo lo que tu mascota necesita en un solo lugar!</p>
+    </div>
+
+    <div class="capa1">
+        <a href="1.PROYECTO%20WEB.html">Inicio</a>
+        <a href="2.PRODUCTOS.html">Productos</a>
+        <a href="3.SERVICIOS%20VETERINARIOS.html">Servicios</a>
+        <a href="4.BLOG%20Y%20CONSEJOS.html">Blog</a>
+        <a href="5.CONTACTO.html">Contacto</a>
+        <a href="6.PAGO.html">Pago</a>
+    </div>
+
+    <div class="contenido" id="inicio">
+        <h2>Bienvenidos a SUPERZOO</h2>
+        <p style="font-size:25px;text-align: center;">Descubre nuestras ofertas, productos de calidad y servicios veterinarios especializados.</p>
+    </div>
+
+    <div class="contenido" id="productos">
+        <h2>Productos para Mascotas</h2>
+        <div class="products">
+            <div class="img">
+                <img src="FOTOS(F2)/FOTO3.jpg" alt="Alimento para mascotas">
+                <h3>Alimentos para Mascotas</h3>
+                <p>Variedad en alimentos para perros, gatos y más.</p>
+            </div>
+            <div class="img">
+                <img src="FOTOS(F2)/foto4.jpg" alt="Accesorios">
+                <h3>Accesorios</h3>
+                <p>Los mejores juguetes y accesorios para tu mascota.</p>
+            </div>
+            <div class="img">
+                <img src="FOTOS(F2)/FOTO5.jpg" alt="Higiene">
+                <h3>Productos de Higiene</h3>
+                <p>Mantén a tu mascota limpia y feliz.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="contenido" id="servicios">
+        <h2>Servicios Veterinarios</h2>
+        <div class="services">
+            <div class="img">
+                <img src="FOTOS(F2)/foto6.jpg" alt="Vacunación">
+                <h3>Vacunación</h3>
+                <p>Protege a tu mascota con nuestro servicio de vacunación.</p>
+            </div>
+            <div class="img">
+                <img src="FOTOS(F2)/foto7.jpg" alt="Consultas">
+                <h3>Consultas Veterinarias</h3>
+                <p>Reserva una cita con nuestros expertos veterinarios.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="contenido" id="blog">
+        <h2>Blog y Consejos</h2>
+        <div class="consejos">
+            <h4>Consejos para el Cuidado de Perros</h4>
+            <p>Mantén a tu perro saludable con estos consejos esenciales...</p>
+        </div>
+        <div class="consejos">
+            <h4>Juguetes Recomendados para Gatos</h4>
+            <p>Descubre los juguetes favoritos para mantener a tu gato entretenido...</p>
+        </div>
+    </div>
+
+    <div class="contenido" id="contacto">
+        <h2>Contacto</h2>
+        <p>Para más información contáctanos: <strong>info@superzoo.com</strong></p>
+    </div>
+
+   
+
+  
+    <div class="footer">
+    <p>&copy; 2024 SUPERZOO - Todos los derechos reservados</p>
+    <p>
+        <a href="POLITICA%20DE%20PRIVACIDAD.html" target="_blank" style="color: white;">Política de Privacidad</a> | 
+        <a href="AVISO%20LEGAL.html" target="_blank" style="color: white;">Aviso Legal</a> | 
+        <a href="POLITICA%20DE%20COOKIES.html" target="_blank" style="color: white;">Política de Cookies</a>| 
+        <a href="CONDICIONES%20DE%20COMPRA.html" target="_blank" style="color: white;">Condiciones de Compra</a>
+    </p>
+</div>
+
+</body>
+
+</html>

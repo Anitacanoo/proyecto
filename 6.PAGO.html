@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Productos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        div ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        div ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        div ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        section {
+            padding: 20px;
+        }
+
+        h2, h3 {
+            color: #333;
+        }
+        h3 {
+            text-align: center;
+            font-size: 25px;
+        }
+
+        .product-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .product {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin: 10px;
+            padding: 15px;
+            width: 200px;
+            text-align: center;
+        }
+
+        .product img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        input[type="number"], input[type="text"] {
+            width: 50px;
+            padding: 5px;
+            margin-top: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        h1 {
+            font-size: 37px;
+        }
+
+        .carro {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 50px;
+            cursor: pointer;
+        }
+
+        .carro:hover {
+            background-color: #45a049;
+        }
+
+        .carro span {
+            font-weight: bold;
+            margin-left: 10px;
+        }
+
+        .detallespago {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 20px;
+            width: 300px;
+            margin: 20px auto;
+            text-align: center;
+        }
+
+        .detallespago input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .detallespago button {
+            width: 100%;
+            background-color: #4CAF50;
+            padding: 10px;
+            margin-top: 10px;
+            cursor: pointer;
+        }
+
+        .detallespago button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>PAGO</h1>
+    </header>
+
+    <section id="pago">
+        <h2 style="text-align: center;">Pago con Tarjeta</h2>
+        <div class="detallespago">
+            <h3>Detalles de Pago</h3>
+            <form>
+                <input type="text" placeholder="Nombre del titular" required>
+                <input type="text" placeholder="Número de tarjeta" maxlength="16" required>
+                <input type="text" placeholder="MM/AA" maxlength="5" required>
+                <input type="text" placeholder="CVV" maxlength="3" required>
+                <button type="submit">Pagar</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Tienda de Animales. Todos los derechos reservados.</p>
+         <p>
+        <a href="POLITICA%20DE%20PRIVACIDAD.html" target="_blank" style="color: white;">Política de Privacidad</a> | 
+        <a href="AVISO%20LEGAL.html" target="_blank" style="color: white;">Aviso Legal</a> | 
+        <a href="POLITICA%20DE%20COOKIES.html" target="_blank" style="color: white;">Política de Cookies</a>| 
+        <a href="CONDICIONES%20DE%20COMPRA.html" target="_blank" style="color: white;">Condiciones de Compra</a>
+    </p>
+    </footer>
+</body>
+</html>
